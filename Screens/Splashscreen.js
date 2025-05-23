@@ -18,7 +18,8 @@ useEffect(() => {
     <Image style={styles.image}
     source={require('../assets/splashscreentodo2.jpg')}/>
    <Text style={styles.text}>TODO APP</Text>
-   <Text style={styles.text}>LOADINGG....</Text>
+
+   <Text style={styles.text}>LOADINGG...</Text>
  
 </View>
 
