@@ -1,11 +1,9 @@
+
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import { Keyboard } from "react-native";
 import { Alert, Button, Pressable, TextInput, TouchableOpacity } from "react-native";
 import { View ,StyleSheet,Text} from "react-native"
-
-
-
 export default function Loginscreen(){
     const [username,setusername]=useState('');
     const navigation=useNavigation();
@@ -50,7 +48,7 @@ export default function Loginscreen(){
         onPress={handlesubmit}>
           <Text >Submit</Text>
         </TouchableOpacity>
-        </View>
+
     );
 };
 const styles = StyleSheet.create({
@@ -58,6 +56,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent:'center',
     alignItems:'center',
+
  
   },
  btn:{
@@ -89,4 +88,7 @@ containeruser:{
  justifyContent:'center',
  alignItems:'center',
 }
+
+  },
+ 
 });
