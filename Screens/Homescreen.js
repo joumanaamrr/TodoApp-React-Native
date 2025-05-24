@@ -60,19 +60,14 @@ export default function Homescreen({route}){
 
   return (
   <View style={styles.container}>
-    {/* Header */}
     <Text style={styles.welcome}>Welcome, {username}!</Text>
-    
-    {/* Task Counter */}
     <Text style={styles.counterText}>
       {`${tasks.filter(t => !t.completed).length} remaining / ${tasks.length} total`}
     </Text>
-
-    {/* Add Task Input */}
     <View style={styles.inputContainer}>
       <TextInput
         style={styles.input}
-        placeholder="Add a new task..."
+        placeholder="Add a new task.."
         value={newtask}
         onChangeText={setnewtask}
         onSubmitEditing={addtask}
@@ -81,8 +76,6 @@ export default function Homescreen({route}){
         <Text style={styles.buttonText}>+</Text>
       </TouchableOpacity>
     </View>
-
-    {/* Task List */}
     <FlatList
       data={tasks}
       keyExtractor={(item) => item.id}
@@ -163,7 +156,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 100,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 8 },
+    shadowOffset: { width: 0, height: 9 },
     shadowOpacity: 0.2,
     shadowRadius: 1,
     elevation: 1,
