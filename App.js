@@ -4,7 +4,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Splashscreen from './Screens/Splashscreen';
 import Loginscreen from './Screens/Loginscreen';
+
 import Homescreen from './Screens/Homescreen';
+=======
+
 
 const Stack =createStackNavigator();
 
@@ -20,12 +23,15 @@ export default function App() {
      <Stack.Screen
      name='Login'
      component={Loginscreen}
+
      options={{headerShown:false}}
      ></Stack.Screen>
      <Stack.Screen
      name='Home'
      component={Homescreen}
      options={{headerShown:false}}
+
+
      ></Stack.Screen>
     </Stack.Navigator>
     </NavigationContainer>
